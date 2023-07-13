@@ -1,6 +1,7 @@
 {% extends 'base.html'%}
 {% block content %}
+<h1>snack list</h1>
 {% for snack in object_list %}
-    <a href=""><h2>snack : {{snack.name}}</h2></a>
+<h2><a href="{%url 'snack_details' snack.id %}">snack : {{snack.name}}</a></h2>
 {%endfor%}
 {% endblock %}
