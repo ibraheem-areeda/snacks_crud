@@ -4,4 +4,7 @@
 {% for snack in object_list %}
 <h2><a href="{%url 'snack_details' snack.id %}">snack : {{snack.name}}</a></h2>
 {%endfor%}
+<button type="button">
+    <a href="{% url 'create_snack' %}">create snack</a>
+</button>
 {% endblock %}

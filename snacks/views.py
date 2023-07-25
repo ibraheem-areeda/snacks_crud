@@ -1,10 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView ,ListView, DetailView , CreateView , DeleteView , UpdateView
+from django.views.generic import  ListView, DetailView , CreateView , DeleteView , UpdateView
 from .models import Snack
 from django.urls import reverse_lazy
 
-class HomeView(TemplateView):
-    template_name = 'home.html'
 
 class SnackListView (ListView):
     template_name = 'snack_list.html'

@@ -4,5 +4,14 @@
 <h2>{{snack.name}}</h2>
 <h2>{{snack.purchaser}}</h2>
 <h2>{{snack.description}}</h2>
-<h2><a href="/">Home Page</a></h2>
+<button type="button">
+    <a href="{% url 'snacks' %}">home page</a>
+</button>
+<button type="button">
+    <a href="{%url 'update_snack'  snack.id %}">update snack</a>
+</button>
+<button type="button">
+    <a href="{% url 'delete_snack'  snack.id  %}">delete snack</a>
+</button>
 {% endblock %}
+
