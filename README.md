@@ -1,5 +1,5 @@
-# LAB - Class 27
-## Project: django-models
+# LAB - Class 28
+## Project: snacks_crud 
 ### Author: Ibraheem Areeda
 
 
